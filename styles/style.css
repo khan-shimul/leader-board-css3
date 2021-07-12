@@ -100,9 +100,19 @@ hr{
 .courses{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    justify-content: center;
+}
+
+.course{
+    width: 253px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px lightgray;
+    padding: 14px 13px;
 }
 .course .course-banner img{
-    width: 224px;
+    width: 250px;
     height: 104px;
 }
 
@@ -120,14 +130,13 @@ hr{
     color: #FFC014;
 }
 
-.empty{
+.fa-star.empty{
     color: #AEAEAE;
 }
 
-/* .course-duration{
+.course-duration{
     background: #FFE4E8;
     border-radius: 15px;
     color: #FF4A60;
-    font-size: 15px;
     padding: 4px 6px;
-} */
+}
