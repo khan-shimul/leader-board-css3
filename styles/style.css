@@ -18,6 +18,7 @@ main{
     background-color: #FFFFFF;
     padding: 30px;
     margin-top: 24px;
+    border-radius: 5px;
 }
 
 hr{
@@ -139,4 +140,46 @@ hr{
     border-radius: 15px;
     color: #FF4A60;
     padding: 4px 6px;
+}
+
+/* -----------------
+    Media Queries 
+--------------------*/
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .player, .blog, .course{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    /* .course{
+        margin-left: 10px;
+    } */
+
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        justify-content: center;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
